@@ -7,7 +7,8 @@
 //
 
 import XCTest
-@testable import nostory2
+@testable import nostory2 
+
 
 class nostory2Tests: XCTestCase {
     
@@ -31,6 +32,14 @@ class nostory2Tests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testExampleThatPasses() {
+        XCTAssertEqual(1+1, 4-2, "Should both be 2")
+    }
+    
+    func testExampleThatFails() {
+        XCTAssertEqual(1+1, 4-1, "Should both be 2")
     }
     
 }
